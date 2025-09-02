@@ -1,0 +1,91 @@
+:root { color-scheme: dark; }
+html, body {
+    margin: 0;
+    padding: 0;
+}
+body {
+    font-family: 'Crimson Text', serif;
+    background-color: #111; /* Fondo oscuro */
+    color: #fdfdfd;
+    font-size: 1.2em;
+}
+header {
+    background-color: #8b0000; /* rojo oscuro */
+    padding: 1rem;
+    text-align: center;
+    position: sticky;
+    top: 0;
+    z-index: 10;
+}
+header h1 {
+    margin: 0;
+    font-size: 2.8rem;
+    color: #fff;
+}
+nav { margin-top: 0.5rem; }
+nav a {
+    color: #fdfdfd;
+    text-decoration: none;
+    margin: 0 0.75rem;
+    font-weight: bold;
+    font-size: 1.2rem;
+    transition: color 0.2s ease;
+    padding: 16px;
+}
+nav a:hover { color: #ffd700; }
+main {
+    padding: 2rem 1rem;
+    max-width: 1000px;
+    margin: auto;
+}
+footer {
+    margin-top: 3rem;
+    padding: 1.5rem;
+    text-align: center;
+    background: #1a1a1a;
+    color: #aaa;
+    font-size: 0.9rem;
+}
+
+/* Botones principales */
+.btn-primary {
+    display: inline-block;
+    background-color: #ff4444; /* rojo */
+    color: #ffffff; /* texto blanco */
+    font-weight: bold;
+    padding: 0.75rem 1.5rem;
+    border-radius: 0.5rem; /* un poco redondeados */
+    text-decoration: none;
+    transition: background 0.3s ease, transform 0.2s ease;
+}
+
+.btn-primary:hover {
+    background-color: #cc0000; /* rojo más oscuro al pasar el ratón */
+    transform: translateY(-2px); /* ligero efecto flotante */
+}
+
+.btn-secondary {
+    display: inline-block;
+    background-color: #222; /* fondo oscuro */
+    color: #ff4444; /* texto rojo para contraste */
+    font-weight: bold;
+    padding: 0.75rem 1.5rem;
+    border-radius: 0.5rem;
+    border: 2px solid #ff4444; /* borde rojo */
+    text-decoration: none;
+    transition: background 0.3s ease, color 0.3s ease, transform 0.2s ease;
+}
+
+.btn-secondary:hover {
+    background-color: #ff4444; /* rojo al pasar el ratón */
+    color: #ffffff; /* texto blanco */
+    transform: translateY(-2px);
+}
+
+/* Contenedor de botones en el hero */
+.hero .buttons {
+    display: flex;
+    gap: 1rem;
+    flex-wrap: wrap;
+    justify-content: center;
+}

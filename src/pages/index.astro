@@ -1,45 +1,27 @@
 ---
 import Layout from "../layouts/Layout.astro";
+import ActividadesInicio from "../components/ActividadesInicio";
 ---
 
 <Layout title="Certamen de Tunas 2025">
+
+	<div class="buttons">
+		<a href="/mapa" class="btn-secondary">Ver Mapa</a>
+	</div>
+
+	<ActividadesInicio client:load />
+
+
 	<section class="hero">
-		<img src="/portada.jpg" alt="Certamen de Tunas" class="hero-img" />
+		<img src="/portada.jpg" alt="Certamen de Tunas Castelldefels" class="hero-img" />
 		<h1>Certamen de Tunas 2025</h1>
-		<p>Bienvenidos al certamen que se celebrará en noviembre en Castellón.
-			Aquí encontrarás toda la información: calendario, tunas participantes,
-			hoteles y premios.</p>
-		<a href="/calendario" class="btn">Ver calendario</a>
+		<p>
+			Bienvenidos al Certamen de Tunas que se celebrará en
+			<strong>Castelldefels</strong> en noviembre de 2025.
+			Aquí encontrarás toda la información necesaria para seguir el evento:
+			calendario, mapa de actividades, hoteles y premios.
+		</p>
+
 	</section>
+
 </Layout>
-
-<style>
-	.hero {
-		display: flex;
-		flex-direction: column;
-		align-items: center;
-		text-align: center;
-		gap: 1rem;
-		padding: 2rem;
-	}
-
-	.hero-img {
-		width: 100%;
-		max-width: 500px;
-		border-radius: 1rem;
-	}
-
-	h1 {
-		font-size: 2rem;
-		font-weight: bold;
-	}
-
-	.btn {
-		background: #b8860b;
-		color: white;
-		padding: 0.75rem 1.5rem;
-		border-radius: 0.5rem;
-		text-decoration: none;
-		font-weight: bold;
-	}
-</style>

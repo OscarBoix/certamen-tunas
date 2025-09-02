@@ -1,22 +1,48 @@
-<!doctype html>
-<html lang="en">
-	<head>
-		<meta charset="UTF-8" />
-		<meta name="viewport" content="width=device-width" />
-		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-		<meta name="generator" content={Astro.generator} />
-		<title>Astro Basics</title>
-	</head>
-	<body>
-		<slot />
-	</body>
-</html>
+---
+import "../styles/global.css";
+const { title } = Astro.props;
+---
 
-<style>
-	html,
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<meta charset="UTF-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<title>{title}</title>
+
+	<!-- Google Fonts -->
+	<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Lato:wght@400;500&display=swap" rel="stylesheet"></head>
+
+<body>
+<header>
+	<h1>Certamen de Tunas Castelldefels 2025</h1>
+	<nav>
+		<a href="/">Inicio</a>
+		<a href="/calendario">Calendario</a>
+		<a href="/mapa">Mapa</a>
+		<a href="/hoteles">Hoteles</a>
+		<a href="/tunas">Participantes</a>
+		<a href="/premios">Premios</a>
+	</nav>
+</header>
+<style is:global>
 	body {
-		margin: 0;
-		width: 100%;
-		height: 100%;
+		font-family: 'Lato', sans-serif;
+		background-color: #111;
+		color: #fdfdfd;
+	}
+
+	h1, h2, h3, h4 {
+		font-family: 'Lato', sans-serif;
 	}
 </style>
+<main>
+	<slot />
+</main>
+
+<footer>
+	© 2025 IX Certamen de Tunas de Peritos en Castelldefels – Todos los derechos reservados
+</footer>
+</body>
+</html>

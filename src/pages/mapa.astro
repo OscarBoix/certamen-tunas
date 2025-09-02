@@ -1,0 +1,21 @@
+---
+import Layout from "../layouts/Layout.astro";
+const imagenes = [
+  "/images/mapa1.jpg",
+  "/images/mapa2.jpg",
+  "/images/mapa3.jpg",
+];
+---
+
+<Layout title="Certamen de Tunas 2025">
+    <h1>Mapa del Festival</h1>
+    <div style="display: flex; flex-direction: column; gap: 2rem; align-items: center;">
+      {imagenes.map((src, i) => (
+              <img
+                      src={src}
+                      alt={`Mapa ${i + 1}`}
+                      style="max-width: 90%; border-radius: 12px; box-shadow: 0 4px 10px rgba(0,0,0,0.2);"
+              />
+      ))}
+    </div>
+</Layout>
