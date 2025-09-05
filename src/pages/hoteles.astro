@@ -1,0 +1,25 @@
+---
+import Layout from "../layouts/Layout.astro";
+
+const participantes = [
+    "Peritos Málaga",
+    "Ciencias Barcelona",
+    "Informática Las Palmas",
+    "Peritos Sevilla",
+    "Agrícolas Sevilla",
+    "Peritos Valencia",
+    "Peritos Alcoy",
+    "Perimática Madrid",
+    "Ciencias Valencia",
+    "Tuna Femenina de Distrito de Vizcaya"
+];
+---
+
+<Layout title="Certamen de Tunas 2025">
+    <h1>Tunas participantes</h1>
+    <div style="display: flex; flex-direction: column; gap: 1rem; align-items: center;">
+        {participantes.map((participante, i) => (
+          <p>{i + 1}. {participante}</p>
+        ))}
+    </div>
+</Layout>
