@@ -6,22 +6,43 @@ import ActividadesInicio from "../components/ActividadesInicio";
 <Layout title="Certamen de Tunas 2025">
 
 	<div class="buttons">
-		<a href="/mapa" class="btn-secondary">Ver Mapa</a>
+		<h1>Calendario</h1>
+
+		<a href="/mapa" class="btn-primary">Ver Mapa</a>
 	</div>
 
 	<ActividadesInicio client:load />
 
-
 	<section class="hero">
 		<img src="/portada.jpg" alt="Certamen de Tunas Castelldefels" class="hero-img" />
+
 		<h1>Certamen de Tunas 2025</h1>
 		<p>
-			Bienvenidos al Certamen de Tunas que se celebrará en
-			<strong>Castelldefels</strong> en noviembre de 2025.
+			Bienvenidos al IX Certamen de Tunas del Circuito Científico-Técnico celebrado en la ciudad de
+			Castelldefels (Barcelona) en noviembre de 2025.
+		</p>
+		<p>
 			Aquí encontrarás toda la información necesaria para seguir el evento:
 			calendario, mapa de actividades, hoteles y premios.
 		</p>
-
 	</section>
 
 </Layout>
+
+<style>
+	.hero {
+		text-align: center;
+	}
+
+	.hero-img {
+		width: 100%;
+		object-fit: cover;
+		border-radius: 0.5rem;
+	}
+
+	.buttons {
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+	}
+</style>

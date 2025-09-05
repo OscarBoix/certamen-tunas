@@ -1,25 +1,25 @@
 ---
 import Layout from "../layouts/Layout.astro";
 
-const participantes = [
-    "Peritos Málaga",
-    "Ciencias Barcelona",
-    "Informática Las Palmas",
-    "Peritos Sevilla",
-    "Agrícolas Sevilla",
-    "Peritos Valencia",
-    "Peritos Alcoy",
-    "Perimática Madrid",
-    "Ciencias Valencia",
-    "Tuna Femenina de Distrito de Vizcaya"
+const premios = [
+    "1ª mejor tuna de todo el certamen",
+    "2ª mejor tuna de todo el certamen",
+    "3ª mejor tuna de todo el certamen",
+    "Mejor actuación en el escenario",
+    "Mejor pasacalles",
+    "Mejor ronda",
+    "Mejor cantante solista",
+    "Mejor pandereta",
+    "Mejor bandera",
+    "Tuna más simpática"
 ];
 ---
 
 <Layout title="Certamen de Tunas 2025">
-    <h1>Tunas participantes</h1>
+    <h1>Premios</h1>
     <div style="display: flex; flex-direction: column; gap: 1rem; align-items: center;">
-        {participantes.map((participante, i) => (
-          <p>{i + 1}. {participante}</p>
+        {premios.map((premio, i) => (
+          <p>{premio}</p>
         ))}
     </div>
 </Layout>
